@@ -1,0 +1,116 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #edf6f9;
+}
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+nav a,
+.book,
+.join,
+footer a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #8ECAE6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#logo_link {
+    height: 90px;
+}
+#logo_link figure{
+    height: 100%;
+    margin: 0 auto;
+}
+#logo_link figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.logo,
+.icon{
+    width: 80px;
+}
+header nav{
+    width: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section{
+    text-align: center;
+}
+nav a:hover{
+    background-color: #edf6f9;
+}
+#background {
+    height: 725px;
+}
+.book, .join{
+    background-color: #219EBC;
+}
+.book:hover, .join:hover{
+    background-color: #8ECAE6;
+}
+#background{
+    background-color: #023047;
+}
+.msg{
+    background-color: #219EBC;
+}
+footer{
+    background-color: #8ECAE6;
+}
+.home-title{
+    color: black;
+}
+
+h4{
+    color: #4e4e4e;
+}
+.book, .join{
+    color: white;
+}
+.msg h2{
+    color: black;
+}
+.msg p{
+    color: #cccccc;
+}
+.book:hover, .join:hover{
+    color: black;
+}
+footer,
+footer a{
+    color: #023047;
+}
+footer p{
+    font-size: 1.2em;
+}
+footer a:hover{
+    color: #ffffff;
+}
+footer p a:hover {
+    text-decoration: underline;
+}   
