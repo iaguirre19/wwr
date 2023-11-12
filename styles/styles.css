@@ -45,7 +45,7 @@ li{
 /* nav a, */
 .book,
 .join,
-footer a{
+.footer-home a{
     text-decoration: none;
     color: black;
 }
@@ -55,6 +55,7 @@ footer a{
 .header-home{
     display: grid;
     grid-template-columns: 150px auto;
+    align-items: center;
 }
 #logo_link {
     height: 90px;
@@ -103,6 +104,9 @@ footer a{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
 }
 #hero-img{
     width: 100%;
@@ -128,9 +132,9 @@ main section{
 main section img{
     box-sizing: border-box;
 }
-/* nav a:hover{
+nav-home a:hover{
     background-color: #edf6f9;
-} */
+}
 #background {
     height: 725px;
 }
@@ -624,10 +628,10 @@ h4{
         display: block;
         height: auto;
     }
-    nav, .footer-home {
+    .nav-home, .footer-home {
         flex-direction: column;
     }
-    nav a {
+    .nav-home a {
         display: block;
         padding: 15px;
     }
@@ -706,17 +710,28 @@ h4{
     grid-row: 2/3;
   }
   .footer__container{
-    flex-direction: column;
+    flex-direction: column-reverse;
     row-gap: 60px;
   }
   .footer__left{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
   .footer__right{
     flex-direction: column;
   }
-
+  .footer__nav ul{
+    align-items: center;
+  }
+  .footer__column{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__line{
+    width: 100%;
+  }
 
 }
