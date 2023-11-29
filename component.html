@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component site</title>
+    <link rel="stylesheet" href="./styles/component/componet.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img src="./images/rapids.jpeg" alt="rivers image">
+            <div class="card-details">
+                <div class="counter">
+                    <button class="counter-btn" onclick="decrement()">-</button>
+                    <span class="count" id="count">0</span>
+                    <button class="counter-btn" onclick="increment()">+</button>
+                </div>
+                <div class="add-to-cart">
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let countValue = 0;
+    const countElement = document.getElementById('count');
+
+    function increment() {
+        countValue++;
+        countElement.textContent = countValue;
+    }
+
+    function decrement() {
+        if (countValue > 0) {
+            countValue--;
+            countElement.textContent = countValue;
+        }
+    }
+    </script>
+</body>
+</html>
